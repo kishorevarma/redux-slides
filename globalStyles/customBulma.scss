@@ -1,0 +1,32 @@
+@import "bulmaVariables";
+
+@import "~bulma";
+
+
+.columns {
+  @include tablet {
+    &.is-widescreen {
+      display: inherit;
+    }
+    &:not(.is-widescreen):not(.is-desktop) {
+      display: flex;
+    }
+  }
+  @include desktop {
+    &.is-widescreen {
+      display: inherit;
+    }
+    &:not(.is-widescreen) {
+      display: flex;
+    }
+  }
+  @include widescreen {
+    &.is-widescreen {
+      display: flex;
+    }
+  }
+}
+
+
+
+
