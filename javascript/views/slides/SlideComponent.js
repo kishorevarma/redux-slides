@@ -7,7 +7,7 @@ const propTypes = {
   style: PropTypes.object
 };
 
-const SlidesComponent = ({ data: { title, content, points = [] }, style }) => (
+const SlidesComponent = ({ data: { title, content, points = [], color }, style }) => (
   <div styleName="slide" style={style}>
     <div className="title is-1">{title}</div>
     <div className="subtitle is-5">
@@ -15,13 +15,13 @@ const SlidesComponent = ({ data: { title, content, points = [] }, style }) => (
     </div>
     {
       points.length > 0 &&
-      <ul>
+      <div styleName="points" style={{ backgroundColor: color }}>
         {
           points.map((point, index) => (
-            <li key={index}>{point}</li>
+            <div key={index}>{point}</div>
           ))
         }
-      </ul>
+      </div>
     }
   </div>
 );

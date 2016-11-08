@@ -14,16 +14,17 @@ const initialState = {
     title: 'Data Engine',
     content: 'UI Tech'
   }, {
-    title: 'React',
+    title: 'REACT',
     content: 'Just A View Library',
     points: [
       'Virtual Dom Diff',
       'JSX and Babel Transpiling',
       'React Hot Loading',
       'Bigger Community'
-    ]
+    ],
+    color: '#3273dc'
   }, {
-    title: 'Redux',
+    title: 'REDUX',
     content: 'State Management',
     points: [
       'Flux implementation (One Way Binding)',
@@ -31,10 +32,12 @@ const initialState = {
       'MiddleWares',
       'Simple and Small',
       'Easy To Debug',
-      'Dev Tools'
-    ]
+      'Dev Tools',
+      'https://github.com/kishorevarma/redux-slides'
+    ],
+    color: '#23d160'
   }, {
-    title: 'Webpack',
+    title: 'WEBPACK',
     content: 'Build Tool',
     points: [
       'its every thing',
@@ -44,16 +47,20 @@ const initialState = {
       'loaders and plugins',
       'sass compile',
       'dead code elimination'
-    ]
+    ],
+    color: '#ff470f'
   }, {
-    title: 'CSS Modules',
-    content: 'No need to worry about class names clashing'
+    title: 'CSS MODULES',
+    content: 'No need to worry about class names clashing',
+    background: '#ff3860'
   }, {
-    title: 'React Spring',
-    content: 'An Animation Library for React'
+    title: 'REACT SPRING',
+    content: 'An Animation Library for React',
+    background: '#00d1b2'
   }, {
-    title: 'Some More Cool Libraries We are using',
+    title: 'OTHER LIBRARIES',
     content: 'IMO they are cool',
+    background: '#ff470f',
     points: [
       'Bulma CSS Flex library(No JS)',
       'D3',
@@ -62,18 +69,21 @@ const initialState = {
       'redux-promise-middleware',
       'type-to-reducer',
       'enzyme',
-      'nyc'
-    ]
+      'nyc',
+      'webpack-bundle-analyzer'
+    ],
+    color: '#4D7E65'
   }, {
-    title: 'Exploring',
+    title: 'EXPLORING',
     points: [
       'GraphQL',
       'Relay',
       'Apollo',
       'Ava'
-    ]
+    ],
+    color: '#B5533C'
   }, {
-    title: 'Thank you',
+    title: 'THANK YOU',
     content: '????'
   }],
   currentSlideIndex: 0
